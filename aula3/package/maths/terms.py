@@ -33,9 +33,9 @@ class Circulo():
         t.penup()
         t.goto(-400, 0)
         t.pendown()
+        t.shape("circle")
+        t.shapesize(0.1)
         for i in range(0,80):
-            t.shape("circle")
-            t.shapesize(0.1)
             t.forward(10)
             t.stamp()
 
@@ -45,12 +45,9 @@ class Circulo():
         t.pendown()
         t.left(90)
         for i in range(0,80):
-            t.shape("circle")
-            t.shapesize(0.1)
             t.forward(10)
             t.stamp()
-        t.forward(800)
-        
+            
         #reposicionada a tartaruga pra fazer o raio
         t.penup()
         t.left(-90)
